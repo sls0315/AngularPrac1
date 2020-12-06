@@ -1,3 +1,18 @@
 <div id="home">
-    d
+    <div class="vistSection">
+        Please Visit:
+        <div class="chipSection">
+           <button (click)="getStudent()">Student Details</button>
+        </div>
+    </div>
+    <div class="vistSection">
+       <input #name type="text" placeholder="Enter your name" width="10%"/>&nbsp;&nbsp;&nbsp;
+       <input type="text" placeholder="Enter your place" width="10%" #place/>&nbsp;&nbsp;&nbsp;
+       <input type="texr" placeholder="Enter your Country" width="10%" #country/><br><br>
+       <button (click)="addStudent({name:name.value,place:place.value,country:country.value})">ADD Student</button> 
+    </div>
+    <div class="vistSection">
+        <input type="text" placeholder="Enter your Student_Id" width="10%" #student_Id/>&nbsp;&nbsp;&nbsp;
+        <button (click)="delStudent(student_Id.value)">Delete Student</button> 
+     </div>
 </div>
